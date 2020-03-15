@@ -1,0 +1,41 @@
+""""""""""""""
+" VIM Config "
+""""""""""""""
+set nocompatible 						" Disable vi support.
+set tabstop=4 shiftwidth=0				" Set gab to be 4, shifting to be as tabs.
+set undofile              				" Enable persistent undo.
+set hlsearch incsearch      			" Enable incremental search and highlight as we go.
+set ignorecase smartcase 				" Search should be case insensitive unless containing uppercase characters.
+set relativenumber number   			" Enable line numbers relative to the cursor.
+set ruler 								" Show line and character number in lower right hand corner.
+set history=10000 						" Increase history for search and command line entries.
+set cursorline cursorcolumn 			" Highlight the active line and the active column.
+set textwidth=80 colorcolumn=81 		" Set the text width to 80 and create a vertical bar in 81st column.
+set wildmenu 							" Set wildmenu to show options when using tab autocomplete.
+set backspace=2 						" Have backspace behave as it does in other applications.
+set nrformats+=alpha nrformats-=octal 	" Enable inc/dec for alphabetical characters, disable for octal.
+set foldmethod=indent nofoldenable		" Enable code fogding. Unfolded by default.
+set clipboard=unnamedplus               " Integrate with the system clipboard.
+
+source /home/master/src/github.com/vmitov/dotfiles/vim/plugins.vim
+
+colorscheme onedark
+
+" Remove trailing spaces.
+autocmd BufWritePre * :silent! %s/\s\+$//
+
+""""""""""""
+" Mappings "
+""""""""""""
+let mapleader = ";" " Change leader key.
+map <leader>p :CtrlPMixed<cr>
+map <leader>n :bn<cr>
+map <leader>d :bd<cr>
+nnoremap <esc><esc> :silent! nohls<cr>
+
+"""""""""
+" Other "
+"""""""""
+
+" Run last to reload vim-colemak to remap any overridden keys.
+source $HOME/.vim/plugged/vim-colemak/plugin/colemak.vim
