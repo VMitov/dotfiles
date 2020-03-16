@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'hashivim/vim-terraform'
 Plug 'itchyny/lightline.vim'
 Plug 'jooize/vim-colemak'
 Plug 'joshdick/onedark.vim'
@@ -21,6 +22,11 @@ let g:ctrlp_working_path_mode = 'ra'
 " vim-go
 let g:go_fmt_command = 'goimports'
 let g:go_metalinter_command = 'golangci-lint run'
+
+" vim-terraform
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_fmt_on_save=1
 
 " Lightline config
 set laststatus=2
