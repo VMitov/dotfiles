@@ -8,6 +8,9 @@ onedark_green="#98c379"
 onedark_visual_grey="#3e4452"
 onedark_comment_grey="#5c6370"
 
+tmux set-option -g pane-active-border-style fg=$onedark_green
+tmux set-option -g pane-border-style fg=$onedark_white
+
 time_format="%R"
 date_format="%d/%m/%Y"
 datetime="${time_format} ${date_format}"
