@@ -1,21 +1,27 @@
 """"""""""""""
 " VIM Config "
 """"""""""""""
-set backspace=2 						" Have backspace behave as it does in other applications.
-set clipboard=unnamedplus               " Integrate with the system clipboard.
-set cursorline cursorcolumn 			" Highlight the active line and the active column.
-set foldmethod=indent nofoldenable		" Enable code fogding. Unfolded by default.
-set history=10000 						" Increase history for search and command line entries.
+set nocompatible 						" Disable vi support.
+set tabstop=4 shiftwidth=0				" Set gab to be 4, shifting to be as tabs.
+set undofile              				" Enable persistent undo.
 set hlsearch incsearch      			" Enable incremental search and highlight as we go.
 set ignorecase smartcase 				" Search should be case insensitive unless containing uppercase characters.
-set nocompatible 						" Disable vi support.
-set nrformats+=alpha nrformats-=octal 	" Enable inc/dec for alphabetical characters, disable for octal.
 set relativenumber number   			" Enable line numbers relative to the cursor.
 set ruler 								" Show line and character number in lower right hand corner.
-set tabstop=4 shiftwidth=0				" Set gab to be 4, shifting to be as tabs.
+set history=10000 						" Increase history for search and command line entries.
+set cursorline cursorcolumn 			" Highlight the active line and the active column.
 set textwidth=80 colorcolumn=81 		" Set the text width to 80 and create a vertical bar in 81st column.
-set undofile              				" Enable persistent undo.
 set wildmenu 							" Set wildmenu to show options when using tab autocomplete.
+set backspace=2 						" Have backspace behave as it does in other applications.
+set nrformats+=alpha nrformats-=octal	" Enable inc/dec for alphabetical characters, disable for octal.
+set clipboard=unnamedplus               " Integrate with the system clipboard.
+set scrolloff=15 						" Keep at least 15 lines up and down from the cursor if possible.
+
+" Folding config
+set fillchars="fold:\ ,vert:\|"
+set foldmethod=indent
+set foldminlines=0
+set nofoldenable
 
 source /home/master/src/github.com/vmitov/dotfiles/vim/plugins.vim
 
