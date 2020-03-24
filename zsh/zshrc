@@ -30,3 +30,7 @@ export EDITOR=vim
 
 # z
 . ~/.oh-my-zsh/plugins/z/z.sh
+
+# Usefull aliases
+
+alias suvim='sudo -E vim'
