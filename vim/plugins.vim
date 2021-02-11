@@ -20,6 +20,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
 
 " vim-go
+let g:go_fmt_experimental = 1
 let g:go_fmt_command = 'goimports'
 let g:go_metalinter_command = 'golangci-lint run'
 
