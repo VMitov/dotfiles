@@ -1,8 +1,10 @@
 """"""""""""""
 " VIM Config "
 """"""""""""""
+set hidden								" Opening a new file causes files to be hidden instead of closed.
 set nocompatible 						" Disable vi support.
 set tabstop=4 shiftwidth=0				" Set gab to be 4, shifting to be as tabs.
+set list listchars=tab:»·,trail:·       " Display tabs.
 set undofile              				" Enable persistent undo.
 set hlsearch incsearch      			" Enable incremental search and highlight as we go.
 set ignorecase smartcase 				" Search should be case insensitive unless containing uppercase characters.
