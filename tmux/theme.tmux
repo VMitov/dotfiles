@@ -17,10 +17,9 @@ datetime="${time_format} ${date_format}"
 
 set-option -g status-interval 1
 tmux set-option -g status-bg $onedark_black
-tmux set-option -g status-bg $onedark_black
 tmux set-option -g status-right "\
 	#[fg=$onedark_visual_grey,bg=$onedark_visual_grey] \
-	#[fg=$onedark_white, bg=$onedark_visual_grey]${datetime} \
+	#[fg=$onedark_white,bg=$onedark_visual_grey]${datetime} \
 	#[fg=$onedark_black,bg=$onedark_green,bold] #h \
 "
 tmux set-option -g status-left "\
