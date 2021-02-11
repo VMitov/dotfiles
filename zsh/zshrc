@@ -10,7 +10,7 @@ HYPHEN_INSENSITIVE="true"
 plugins=(
   colemak
   git
-  go
+  golang
   kubectl
   minikube
   terraform
