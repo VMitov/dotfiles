@@ -23,6 +23,10 @@ set foldmethod=indent
 set foldminlines=0
 set nofoldenable
 
+" VIM scrolling becomes very slow when having to syntax highlight long lines.
+set wrap!
+set synmaxcol=200
+
 source /home/master/src/github.com/vmitov/dotfiles/vim/plugins.vim
 
 colorscheme onedark
