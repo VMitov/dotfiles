@@ -43,6 +43,8 @@ map <leader>n :bn<cr>
 map <leader>d :bd<cr>
 nnoremap <esc><esc> :silent! nohls<cr>
 
+noremap <leader>s :update<CR>
+
 """""""""
 " Other "
 """""""""
