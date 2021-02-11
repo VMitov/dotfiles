@@ -13,7 +13,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'sirver/ultisnips'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-scripts/scrollfix'
 call plug#end()
 
 " CtrlP
