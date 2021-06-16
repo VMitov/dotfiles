@@ -39,4 +39,4 @@ export EDITOR=vim
 alias vim='nvim'
 alias suvim='sudo -E vim'
 
-[[ ! -f ~/src/github.com/vmitov/dotfiles/zsh/p10k.zsh ]] || source ~/src/github.com/vmitov/dotfiles/zsh/p10k.zsh
+[[ ! -f ~/Workspace/github.com/vmitov/dotfiles/zsh/p10k.zsh ]] || source ~/Workspace/github.com/vmitov/dotfiles/zsh/p10k.zsh

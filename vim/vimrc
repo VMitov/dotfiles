@@ -29,7 +29,7 @@ set nofoldenable
 set wrap!
 set synmaxcol=200
 
-source /home/master/src/github.com/vmitov/dotfiles/vim/plugins.vim
+source /home/master/Workspace/github.com/vmitov/dotfiles/vim/plugins.vim
 
 colorscheme onedark
 
