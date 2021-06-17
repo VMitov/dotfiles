@@ -9,6 +9,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jooize/vim-colemak'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-plug'
+Plug 'kamykn/spelunker.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'sirver/ultisnips'
 Plug 'tpope/vim-commentary'
@@ -28,6 +29,9 @@ let g:go_metalinter_command = 'golangci-lint run'
 let g:terraform_align=1
 let g:terraform_fold_sections=1
 let g:terraform_fmt_on_save=1
+
+" Spelunker
+set nospell
 
 " Lightline config
 set laststatus=2
