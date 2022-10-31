@@ -32,7 +32,7 @@ export LANG=en_US.UTF-8
 export EDITOR=vim
 
 # z
-. ~/.oh-my-zsh/plugins/z/z.sh
+. ~/.oh-my-zsh/plugins/z/z.plugin.zsh
 
 # Useful aliases
 
